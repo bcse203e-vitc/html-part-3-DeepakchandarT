@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Website Feedback</title>
+</head>
+<body>
+ <h1>Website Feedback</h1>
+ <form action="/submit-feedback" method="post">
+  <input type="text" name="name" placeholder="Name" required><br><br>
+  <input type="email" name="email" placeholder="Email" required><br><br>
+
+  1 <input type="radio" name="rating" value="1" required>
+  2 <input type="radio" name="rating" value="2">
+  3 <input type="radio" name="rating" value="3">
+  4 <input type="radio" name="rating" value="4">
+  5 <input type="radio" name="rating" value="5"><br><br>
+
+  <select name="feedback-type">
+   <option value="suggestion">Suggestion</option>
+   <option value="bug">Bug Report</option>
+   <option value="compliment">Compliment</option>
+  </select><br><br>
+
+  Yes <input type="radio" name="recommend" value="yes" required>
+  No <input type="radio" name="recommend" value="no"><br><br>
+
+  <textarea name="feedback" rows="4" cols="40" placeholder="Feedback"></textarea><br><br>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+ </form>
+</body>
+</html>

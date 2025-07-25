@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Health Survey</title>
+</head>
+<body>
+ <h1>Health Survey</h1>
+ <form action="/submit-health" method="post">
+  <input type="text" name="name" placeholder="Name" required><br><br>
+  <input type="number" name="age" placeholder="Age" min="0" required><br><br>
+
+  <input type="radio" id="male" name="gender" value="Male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br><br>
+
+  <input type="number" name="height" placeholder="Height (cm)" min="0"><br><br>
+  <input type="number" name="weight" placeholder="Weight (kg)" min="0"><br><br>
+
+  <input type="checkbox" name="lifestyle" value="Smoking"> Smoking<br>
+  <input type="checkbox" name="lifestyle" value="Exercise"> Exercise<br><br>
+
+  <select name="dietary">
+   <option value="vegetarian">Vegetarian</option>
+   <option value="non-vegetarian">Non-Vegetarian</option>
+   <option value="vegan">Vegan</option>
+  </select><br><br>
+
+  <select name="activity">
+   <option value="sedentary">Sedentary</option>
+   <option value="moderate">Moderate</option>
+   <option value="active">Active</option>
+  </select><br><br>
+
+  <textarea name="health-concerns" rows="4" cols="40" placeholder="Health Concerns (optional)"></textarea><br><br>
+
+  <button type="submit">Submit</button>
+ </form>
+</body>
+</html>
